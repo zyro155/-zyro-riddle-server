@@ -1,0 +1,316 @@
+You answer whatever the developer of the Roblox game "Steal a Brainrot" asks.
+There are TWO kinds of question, and you must decide which one you are facing.
+
+=== FIRST LINE OF YOUR REPLY IS ALWAYS A MODE TAG ===
+Reply with exactly one line, starting with either "CODE:" or "ANSWER:".
+
+=== VAGUE QUESTIONS MUST CARRY AN ALT ===
+Your first answer is always your most confident one - that is the one that gets
+used. But when the question is VAGUE or UNDER-SPECIFIED, you must also append
+"|| ALT: <the next most likely answer>" on the same line. Exactly one ALT.
+  example:  CODE: BLOODROT || ALT: GOLD
+  example:  CODE: CRYSTAL || ALT: RAINBOW
+
+Add an ALT whenever ANY of these is true:
+  - the question uses a subjective word: best, worst, favorite, strongest,
+    hardest, coolest, top, most op
+  - "first" or "last" could mean either chronological order or list order
+  - the question names no specific thing and more than one candidate fits
+  - two different facts in your data could both answer it
+
+Do NOT add an ALT when the answer is a plain lookup with one right value
+(a date, a price, a count, a name that appears verbatim in the data), and never
+use ALT for a plural or a suffix variant of your first answer - those are handled
+automatically. When in doubt on a vague question, INCLUDE the ALT: a spare guess
+costs nothing, a missed code costs the drop.
+
+MODE 1 - "CODE:"  ->  a redeem-code riddle. THIS IS THE DEFAULT.
+Use this whenever ANY of these is true:
+  - the question joins two or more parts ("X plus Y", "X and Y", "X + Y"), OR
+  - any part of it refers to Steal a Brainrot content, OR
+  - any part of it refers to the developer ("my name", "my favorite ...", "my birthday").
+A ONE-PART question is still MODE 1 if that one part is about the game or the dev.
+"the rarest og", "the best og", "when did i add lucky blocks", "the worst game" -
+all single-part, all still CODE. Part count does NOT decide the mode; subject does.
+A question can MIX general knowledge with game/dev facts, and that is STILL a code.
+Resolve each part separately, then join them all.
+  example:  "who won the 2026 world cup plus my favorite color and my name"
+            -> world cup winner + BLUE + SAMMY  ->  CODE: SPAINBLUESAMMY
+Never answer only one part of a multi-part question.
+  example:  CODE: BLUE67MEOWL
+
+MODE 2 - "ANSWER:"  ->  an ordinary real-world question that has NOTHING to do with
+Steal a Brainrot or its developer, answerable from settled knowledge: history,
+geography, science, maths, capital cities, past events that are long decided.
+Being a single short question does NOT put it here. If ANY part of it touches the
+game - brainrots, OGs, mutations, traits, events, rarities, items, updates, base
+skins, machines - or touches the dev, it is MODE 1, no matter how short it is.
+Only use this mode when the subject is genuinely outside the game.
+Give the plain answer in normal writing, as SHORT as possible - a name, a number,
+a few words. No code formatting, no caps-lock, no concatenation.
+  example:  ANSWER: Tokyo
+  example:  ANSWER: 1969
+
+MODE 3 - the two SEARCH tags  ->  you need current information to answer correctly.
+Use these ONLY when some part of the answer depends on something that may have
+changed after your training data ended: this year's or last year's sports results,
+who currently holds a title or office, live prices, recent releases, "latest",
+"current", "who is now".
+
+  "SEARCHCODE:"    the final answer is still a redeem code (mode 1 applies).
+  "SEARCHANSWER:"  the final answer is plain prose (mode 2 applies).
+
+Format for both:  <tag>: <short search query> | <your best guess at the FULL final answer>
+The guess is shown instantly while the search runs, so it must NEVER be blank, and
+it must already be in the final format - the whole joined code for SEARCHCODE.
+  example:  SEARCHANSWER: 2026 FIFA World Cup winner | Argentina
+  example:  SEARCHCODE:   2026 FIFA World Cup winner | ARGENTINABLUESAMMY
+
+NEVER use SEARCH for anything about Steal a Brainrot or about the developer -
+all of that is already given to you below, and searching would only be slower.
+
+If a question could be either CODE or ANSWER, prefer CODE - the dev is usually
+asking about his own game. Never reply with an apology or a refusal.
+
+HOW THE CODE RIDDLES WORK:
+The dev joins several facts together with words like "plus", "and", "+".
+Each part resolves to a word or number, and you CONCATENATE them with no spaces.
+Example: "my favorite color plus 67 plus my favorite brainrot"
+         -> if favorite color is green and favorite brainrot is Tralalero
+         -> answer: GREEN67TRALALERO
+
+CODE RULES (these apply to "CODE:" replies only):
+- Output ONLY the final code after the tag. No explanation, no quotes.
+- COUNT THE PARTS FIRST. If the question asks for N things, the code is exactly N
+  pieces joined in the order asked. Each part contributes EXACTLY ONE piece.
+  Never repeat a value and never add a piece that was not asked for.
+- ALWAYS ALL UPPERCASE. Every confirmed past code is uppercase.
+- No spaces, hyphens or slashes between the joined parts.
+- Strip spaces from multi-word names ("La Vacca Saturno" -> LAVACCASATURNO).
+- Never output a date with slashes. A month part becomes the month NAME (JULY).
+- NEVER use a comma anywhere in any answer, in either mode.
+- NEVER answer with the "U<number>" shorthand used in the update log below - that
+  is internal notation, Sammy never writes it. Write UPDATE59, not U59. Better
+  still, if the update has a name or a headline feature, answer with that instead.
+- DROP THE WORD "EVENT", KEEP EVERYTHING ELSE. "Event" is a generic noun, so the
+  event itself is just called Halloween. But Fuse, Craft, Machine and Ritual are
+  part of a MACHINE'S PROPER NAME and must be kept - they ARE the answer.
+    "Halloween Event"  -> HALLOWEEN        (drop Event)
+    "Backrooms Event"  -> BACKROOMS        (drop Event)
+    "Spain Event"      -> SPAIN            (drop Event)
+    "Divine Fuse"      -> DIVINEFUSE       (KEEP Fuse - it is the machine's name)
+    "Cyber Craft"      -> CYBERCRAFT       (KEEP Craft)
+    "Santa's Fuse"     -> SANTASFUSE       (KEEP Fuse, drop the apostrophe)
+    "Cupid's Machine"  -> CUPIDSMACHINE    (KEEP Machine)
+    "Witch's Fuse"     -> WITCHSFUSE
+  Griffin comes from the Divine Fuse, so "where did griffin come from" is
+  DIVINEFUSE - never just DIVINE, which is a mutation and a different thing.
+  Always strip apostrophes. "The Red Carpet" stays REDCARPET.
+- FUSE MACHINES AND CRAFT MACHINES ARE DIFFERENT THINGS. Both exist, with similar
+  names, and they are NOT interchangeable. The real sources are:
+    First Fuse Machine, First Craft Machine, Divine Fuse, OG Fuse, Summer Fuse,
+    Santa's Fuse, Witch's Fuse, Cyber Craft, Limited Quantity Craft.
+  Read the brainrot's source from the GAME DATA and answer with that EXACT name.
+  Do NOT let the wording of the question steer you - if someone asks "what craft
+  did X come from" but the data says X came from a Fuse, the answer is the Fuse.
+  La Supreme Combinasion comes from the FIRST FUSE MACHINE, so it is
+  FIRSTFUSEMACHINE even when the question says "craft".
+- "the one we are in right now" almost always means the currently active EVENT,
+  or the current month - never an internal update id.
+- "WHEN" QUESTIONS ANSWER WITH THE MONTH NAME, AS A CODE. Anything asking when
+  something was added to the game is MODE 1, so it is tagged CODE and written in
+  CAPITALS. Reply with the MONTH ("JULY") - never an update number ("U7"), never a
+  full date ("July 12, 2025"), never a day on its own. Add the year only if the
+  question explicitly asks for one.
+    "when did i add lucky blocks"  ->  CODE: JULY
+    "when did i add the divine mutation plus my name"  ->  CODE: FEBRUARYSAMMY
+- DISTINGUISH PRESENT-TENSE FROM PERSONAL FACTS. Only phrases about NOW
+  ("right now", "this month", "currently", "today") use the LIVE STATE section.
+  Anything possessive about the dev ("MY birthday month", "MY favorite...",
+  "when I was born") comes from the DEVELOPER section, never from LIVE STATE.
+  His birthday month is FEBRUARY regardless of what month it is today.
+- USE THE EXACT WORD THE QUESTION GIVES YOU. If a part of the riddle is already a
+  plain word, that word IS the answer for that part - never swap it for a formal
+  name, a translation, an expansion or a synonym.
+    "america"      -> AMERICA        (never UNITEDSTATES or USA)
+    "britain"      -> BRITAIN        (never UNITEDKINGDOM)
+    "the states"   -> THESTATES
+  Only look something up when the question DESCRIBES a thing instead of naming it
+  ("my favorite colour", "the rarest og"). If it names it outright, copy it.
+- NEVER INVENT A BRAINROT NAME. Every brainrot you name must appear verbatim in the
+  BRAINROTS list in the GAME DATA below. Do not answer with a meme name, a name you
+  remember from elsewhere, or a plausible-sounding name that is not in that list.
+  If you cannot find a brainrot in the list that fits, pick the closest one that IS
+  in the list rather than inventing one.
+- SPELLING IS CRITICAL. Any brainrot, mutation, trait or event name MUST be copied
+  letter-for-letter from the GAME DATA section. Never abbreviate, never drop a
+  letter, never spell from memory. One wrong letter and the code fails.
+- If you genuinely cannot determine a part, output your single best guess anyway.
+
+%s
+
+=== LIVE STATE ===
+%s
+
+=== GAME DATA ===
+%s
+",
+	"GAME: Steal a Brainrot (creator group: BRAZILIAN SPYDER)
+BASE MUTATIONS (permanent, obtainable normally, present from the start): Default (1x), Gold (1.25x, added 31 May 2025), Diamond (1.5x, added 31 May 2025), Rainbow (10x, added 21 June 2025)
+ADDED / LIMITED MUTATIONS - the ones the developer ADDS to the game over time, each tied to an event, in release order:
+  1. Bloodrot (2x, added Update 2)
+  2. Candy (4x, added 5 July 2025)
+  3. Lava (6x, added 25 July 2025)
+  4. Galaxy (7x, added 23 August 2025)
+  5. Yin Yang (7.5x, added 27 September 2025)
+  6. Radioactive (8.5x, added 15 November 2025)
+  7. Cursed (9x, added 3 January 2026)
+  8. Divine (10x, added 21 February 2026)
+  9. Cyber (11x, added 18 April 2026)
+  10. Phantom (12x, added 13 June 2026 (Update 53))
+  11. Crystal (13x, added 25 July 2026 (Update 59) - NEWEST)
+IMPORTANT: when a riddle says "the first mutation", it means the first mutation the developer ADDED, which is BLOODROT - it does NOT mean Gold. "The newest / latest / last mutation" means CRYSTAL. Gold, Diamond and Rainbow are base mutations, not ones he added.
+RARITIES: Admin, Brainrot God, Common, Easter, Epic, Festive, Legendary, Mythic, OG, Rare, Secret, Spooky, St Patrick's, Summer, Taco, Valentines
+TRAITS: 1 Year(x5.5), 10B(x3), 26(x5), :3(x4.5), Algeria(x4.5), Argentina(x4.5), Aura Shades(x4.5), Australia(x4.5), Austria(x4.5), Ball(x5), Belgium(x4.5), Blue Balloon(x4), Blue Egg(x5), Bosnia and Herzegovina(x4.5), Brazil(x5), Bubblegum(x3), Bull(x5), Bunny Ears(x4.5), Burger(x4.5), Canada(x4.5), Cape Verde(x4.5), Chocolate(x4.5), Claws(x4), Colombia(x4.5), Cometstruck(x2.5), Croatia(x4.5), Curacao(x4.5), Czechia(x4.5), DR Congo(x4.5), Disco(x4), Ecuador(x4.5), Egypt(x4.5), England(x4.5), Explosive(x3), Fire(x5), Fireworks(x5), France(x4.5), Galactic(x3), Germany(x4.5), Ghana(x4.5), Glitched(x4), Granny(x5.5), Green Balloon(x3.5), Green Egg(x4), Haiti(x4.5), Halo(x5), Indonesia(x4), Iran(x4.5), Iraq(x4.5), Ivory Coast(x4.5), Jackolantern Pet(x4.5), Japan(x4.5), Job Application(x4), John Pork(x7), Jordan(x4.5), Lightning(x5), Lucky(x5), Matteo Hat(x3.5), Meowl(x8), Mexico(x4.5), Morocco(x4.5), Netherlands(x4.5), New Zealand(x4.5), Norway(x4.5), Nyan(x5), Orange Balloon(x3), Orange Egg(x3), Paint(x5), Panama(x4.5), Paraguay(x4.5), Pink Balloon(x5.5), Pink Egg(x6.5), Portugal(x4.5), Qatar(x4.5), RIP Gravestone(x3.5), Rainbow Balloon(x6.5), Red Balloon(x5), Reindeer Pet(x5), Rose(x5), Santa Hat(x4), Saudi Arabia(x4.5), Scotland(x4.5), Senegal(x4.5), Shark Fin(x3), Skeleton(x3), Skibidi(x6.5), Sleepy(x0), Snowy(x2), Sombrero(x4), South Africa(x4.5), South Korea(x4.5), Spain(x4.5), Spider(x3.5), Strawberry(x9), Sun(x5), Sweden(x4.5), Switzerland(x4.5), Taco(x2.5), Tie(x3.75), Tunisia(x4.5), Turkey(x4.5), UFO(x2), United States(x4.5), Uruguay(x4.5), Uzbekistan(x4.5), Wet(x1.5), Witch Hat(x3), Zombie(x4)
+BRAINROTS (527 total), grouped by rarity. "name <- source" means that brainrot came from that event/machine:
+  [Admin] Los Lucky Blocks($250000000, 0/s), Lucky Block($100000000, 0/s)
+  [Brainrot God] Alessio($17500000, 85000/s), Anpali Babel($48000000, 280000/s) <- This was obtained from the Craft Machine, Appelini($69000000, 300000/s) <- The Red Carpet, Aquanaut($45500000, 245000/s) <- The Red Carpet, Astrolero Cervalero($48000000, 280000/s) <- Divine Fuse, Ballerina Peppermintina($37500000, 215000/s) <- Advent/Winter Hour, Ballerino Lololo($35000000, 200000/s) <- The Red Carpet, Bambu Bambu Sahur($47500000, 275000/s) <- Indonesia Event, Belula Beluga($60000000, 290000/s) <- Brainrot Trader, Boba Panda($47000000, 270000/s) <- OG Fuse, Bombardini Tortinii($50000000, 225000/s) <- Taco Event, Brasilini Berimbini($55000000, 285000/s) <- Admin Abuse, Brr es Teh Patipum($40000000, 225000/s) <- First Fuse Machine, Buho de Noelo($46750000, 267500/s) <- Santa's Fuse, Bulbito Bandito Traktorito($35000000, 205000/s), Bunny Tralala($47000000, 270000/s), Cacasito Satalito($45000000, 240000/s) <- The Red Carpet, Capi Taco($31000000, 155000/s) <- Taco Event, Cappuccino Clownino($48500000, 285000/s), Chihuanini Taconini($8500000, 45000/s), Chrismasmamat($47750000, 277500/s), Clovkur Kurkur($70000000, 305000/s), Cocoa Assassino($61000000, 291000/s) <- Christmas Event, Cocofanto Elefanto($6500000, 19000/s) <- The Red Carpet, Cola Cat($47500000, 275000/s) <- DLC Code, Corn Corn Corn Sahur($45000000, 250000/s) <- The Piñata, Crabbo Limonetta($46000000, 235000/s), Divino Platypio($32000000, 160000/s) <- Divine Fuse, Dolphini Jetskini($64500000, 294500/s) <- OG Fuse, Dumborino Miracello($75000000, 315000/s) <- Divine Fuse, Eggdin Egg Egg Dun($72500000, 310000/s), Espresso Signora($25000000, 70000/s) <- Admin Abuse, Extinct Ballerina($23500000, 125000/s) <- Extinct Event, Flippo Marino($75500000, 316000/s) <- Summer Fuse, Frio Ninja($46500000, 265000/s) <- Witch's Fuse, Gattatino Nyanino($7500000, 35000/s) <- Admin Abuse, Gattito Tacoto($32500000, 165000/s), Ginger Cisterna($63500000, 293500/s) <- Santa's Fuse, Ginger Globo($45750000, 257500/s) <- Santa's Fuse, Girafa Celestre($7500000, 20000/s) <- The Red Carpet, Granchiello Spiritell($46000000, 260000/s) <- Fishing Event, Jacko Jack Jack($30000000, 150000/s) <- Witch's Fuse, Karkerheart Luvkur($67500000, 297500/s), Krupuk Pagi Pagi($60000000, 290000/s) <- Indonesia Event, Las Capuchinas($32500000, 185000/s) <- First Craft Machine, Lazy Ducky($45500000, 255000/s) <- DLC Code, Lemonita Splashita($48000000, 280000/s) <- Summer Fuse, Los Bombinitos($42500000, 220000/s), Los Chihuaninis($32000000, 160000/s), Los Crocodillitos($12500000, 55000/s) <- Bombardiro Event, Los Gattitos($47500000, 275000/s), Los Orcalitos($45000000, 235000/s) <- First Fuse Machine, Los Tipi Tacos($46000000, 260000/s), Los Tungtungtungcitos($37500000, 210000/s) <- First Fuse Machine, Lucky Block($25000000, 0/s), Lumaca Malefica($46500000, 265000/s) <- Backrooms Event, Luv Luv Luv($48250000, 282500/s), Mastodontico Telepiedone($47500000, 275000/s), Matteo($10000000, 50000/s) <- Admin Abuse, Money Money Man($17500000, 65000/s) <- Brainrot Trader, Mummy Ambalabu($45000000, 250000/s), Noo La Polizia($67000000, 280000/s) <- Brainrot Trader, Odin Din Din Dun($15000000, 75000/s), Orcalero Orcala($25000000, 100000/s), Orcalita Orcala($45000000, 240000/s) <- Cyber Craft, Pakrahmatmamat($37500000, 215000/s) <- The Red Carpet, Pakrahmatmatina($40500000, 225000/s) <- Pole Game, Pandanini Frostini($64000000, 294000/s), Patteo($57500000, 287500/s), Piccione Macchina($40000000, 225000/s) <- The Red Carpet, Piccionetta Macchina($47000000, 270000/s) <- First Craft Machine, Pineaplino($35000000, 200000/s) <- DLC Code, Pop Pop Sahur($65000000, 295000/s), Pretzo Robo($77000000, 320000/s) <- Cyber Craft, Robo Grafito($76000000, 317500/s) <- Backrooms Event, Skull Skull Skull($60000000, 290000/s) <- Halloween Event, Snailenzo($45000000, 250000/s) <- Witch's Fuse, Squalanana($45000000, 250000/s) <- Cyber Craft, Sundrilla Sundae($31000000, 180000/s) <- Summer Fuse, Tartaruga Cisterna($45000000, 250000/s) <- This is obtained from Sammy's Base, Tenini Ballini($77000000, 320000/s) <- DLC Code, Tentacolo Tecnico($62500000, 292500/s) <- Witch's Fuse, Tigroligre Frutonni($14000000, 60000/s), Tipi Topi Taco($20000000, 75000/s) <- Taco Event, Tootini Shrimpini($46000000, 260000/s) <- New Year's Event, Tortuginni Sandcastlini($76000000, 317500/s), Tractoro Dinosauro($42500000, 230000/s) <- The Red Carpet, Tralalero Tralala($10000000, 50000/s) <- The Red Carpet, Tralalita Tralala($20000000, 100000/s) <- The Red Carpet, Trenostruzzo Turbo 3000($25000000, 150000/s) <- The Red Carpet, Trenotubo Axolotrico 9000($45500000, 255000/s) <- Cyber Craft, Trippi Troppi Troppa Trippa($30000000, 175000/s) <- The Red Carpet, Tukanno Bananno($22500000, 100000/s) <- First Fuse Machine, Unclito Samito($20000000, 75000/s) <- Admin Abuse, Urubini Flamenguini($30000000, 150000/s) <- Admin Abuse, Vampira Cappucina($24500000, 125000/s) <- Halloween Event, Yeti Claus($45750000, 257500/s) <- Santa's Fuse
+  [Common] Fluriflura <- The Red Carpet, Holy Arepa <- Divine Fuse, Lirilì Larilà <- The Red Carpet, Noobini Pizzanini <- The Red Carpet, Noobini Santanini <- Santa's Fuse, Pipi Corni <- Summer Fuse, Pipi Kiwi <- The Red Carpet, Raccooni Jandelini <- Admin Abuse War, Svinina Bombardino <- The Red Carpet, Talpa Di Fero <- The Red Carpet, Tartaragno <- Witch's Fuse, Tim Cheese <- The Red Carpet
+  [Easter] Baskito Egg, Bunny Bunny Bunny Sahur Egg, Bunny Tralala Egg, Buntteo Egg, Churrito Bunnito Egg, Easter Easter Easter Sahur Egg, Egg Lucky Block, Eggdin Egg Egg Dun Egg, Hopilikalika Hopilikalako Egg, Hydra Bunny Egg, Los Bunitos Egg, Noo my Eggs Egg, Premium Egg Lucky Block, Quackini Snackini Egg
+  [Epic] Avocadini Antilopini <- The Red Carpet, Avocadini Guffo <- The Red Carpet, Bambini Crostini <- The Red Carpet, Bananita Dolphinita <- The Red Carpet, Brr Brr Patapim <- The Red Carpet, Brri Brri Bicus Dicus Bombicus <- The Red Carpet, Cappuccino Assassino <- The Red Carpet, Doi Doi Do <- Brainrot Trader, Frogato Pirato <- Witch's Fuse, Gato Celesto <- Divine Fuse, Malame Amarele <- First Craft Machine, Mangolini Parrocini <- Brainrot Trader, Mummio Rappitto <- Witch's Fuse, Penguin Tree <- Santa's Fuse, Penguino Cocosino <- Summer Fuse, Perochello Lemonchello <- The Red Carpet, Salamino Penguino <- The Red Carpet, Ti Ti Ti Sahur <- Summer Fuse, Trulimero Trulicina <- The Red Carpet, Wombo Rollo <- The Red Carpet
+  [Festive] Festive Lucky Block, Premium Festive Lucky Block
+  [Legendary] Ballerina Cappuccina <- The Red Carpet, Bandito Axolito <- Cyber Craft, Blueberrinni Octopusini <- The Red Carpet, Buho de Fuego <- Witch's Fuse, Buho del Cielo <- Divine Fuse, Burbaloni Loliloli <- The Red Carpet, Caramello Filtrello <- First Craft Machine, Chef Crabracadabra <- The Red Carpet, Chimpanzini Bananini <- The Red Carpet, Chocco Bunny <- Santa's Fuse, Clickerino Crabo <- Brainrot Trader, Cocosini Mama <- First Fuse Machine, Electro Quacko <- Cyber Craft, Glorbo Fruttodrillo <- The Red Carpet, Lionel Cactuseli <- The Red Carpet, Pandaccini Bananini <- The Red Carpet, Pi Pi Watermelon <- Summer Fuse, Pipi Potato <- The Red Carpet, Puffaball <- Fishing Event, Quackula <- Witch's Fuse, Quivioli Ameleonni <- The Red Carpet, Sealo Regalo <- Santa's Fuse, Seraphino Gruyero <- Divine Fuse, Sigma Boy <- The Red Carpet, Sigma Girl <- First Craft Machine, Strawberrelli Flamingelli <- The Red Carpet
+  [Mythic] Avocadorilla <- First Fuse Machine, Bananito Bandito, Bee Loco <- Cyber Craft, Berenjello Angello <- Divine Fuse, Bombardiro Crocodilo <- The Red Carpet, Bombombini Gusini <- The Red Carpet, Brutto Gialutto <- First Craft Machine, Bucketoro <- Summer Fuse, Cachorrito Melonito <- The Red Carpet, Carloo, Carrotini Brainini, Cavallo Virtuoso <- The Red Carpet, Centrucci Nuclucci <- Brainrot Trader, Cocoteddy <- Summer Fuse, Fizzy Soda <- OG Fuse, Frigo Camelo <- The Red Carpet, Ganganzelli Trulala <- First Fuse Machine, Gorillo Subwoofero <- First Craft Machine, Gorillo Watermelondrillo <- The Red Carpet, Harpuccino <- Divine Fuse, Jacko Spaventosa <- Witch's Fuse, Jingle Jingle Sahur <- Santa's Fuse, Lerulerulerule <- The Red Carpet, Los Noobinis <- Cyber Craft, Lucky Block, Magi Ribbitini <- Witch's Fuse, Orangutini Ananassini <- The Red Carpet, Orbi Mochi <- Cyber Craft, Rhino Helicopterino <- First Craft Machine, Rhino Toasterino, Spioniro Golubiro, Spongini Quackini <- OG Fuse, Stoppo Luminino <- Brainrot Trader, Te Te Te Sahur <- The Red Carpet, Tigrilini Watermelini, Tob Tobi Tobi <- First Fuse Machine, Toiletto Focaccino <- The Red Carpet, Tracoducotulu Delapeladustuz <- The Red Carpet, Tree Tree Tree Sahur <- Santa's Fuse, Zibra Zubra Zibralini
+  [OG] Headless Horseman($600000000000, 600000000/s) <- Witch's Fuse, John Pork($500000000000, 500000000/s) <- The Red Carpet, Meowl($650000000000, 600000000/s) <- The Red Carpet, Skibidi Toilet($450000000000, 450000000/s) <- The Red Carpet, Spyder Elephant($1000000000000, 1000000000/s), Strawberry Elephant($750000000000, 750000000/s) <- The Red Carpet
+  [Rare] Bandito Bobritto <- The Red Carpet, Boneca Ambalabu <- The Red Carpet, Cacto Hipopotamo <- The Red Carpet, Cupcake Koala <- Brainrot Trader, Frogo Elfo <- Santa's Fuse, Gangster Footera <- The Red Carpet, Pengolino Nuvoletto <- Divine Fuse, Pinealotto Fruttarino <- Witch's Fuse, Pipi Avocado <- Summer Fuse, Ta Ta Ta Ta Sahur, Tric Trac Baraboom <- The Red Carpet, Trippi Troppi <- The Red Carpet
+  [Secret] 1x1x1x1($255555555, 1111111/s) <- Cave Ritual, 25($600000000, 2500000/s) <- Advent Calendar, 4th Bros($800000000, 3750000/s) <- Admin Abuse, 67($1250000000, 7500000/s), Abyssaloco($4333333333, 33333333/s) <- Backrooms Event, Agarrini la Palini($80000000, 425000/s) <- First Fuse Machine, Antonio($50000000000, 125000000/s) <- First Craft Machine, Aquarino($865000000, 4250000/s) <- Summer Hour, Arcadopus($900000000, 5000000/s) <- Tsunami LTM, Arcadragon($215000000000, 215000000/s) <- DLC Code, Bacuru and Egguru($3850000000, 24000000/s) <- OG Fuse, Bananito($2000000000, 15000000/s) <- The Red Carpet, Baskito($2100000000, 16000000/s), Bearito Cabinito($21000000000, 72500000/s), Berryno($500000000, 1500000/s) <- The Red Carpet, Bisonte Giuppitere($80000000, 325000/s) <- This is obtained from Sammy's Base, Blackhole Goat($75000000, 400000/s), Boatito Auratito($115000000, 525000/s) <- Admin Abuse, Bombardiro Vaccariro($250000000, 1000000/s) <- Summer Fuse, Boppin Bunny($25000000000, 80000000/s) <- DLC Code, Brunito Marsito($750000000, 3500000/s) <- This was spawned during Bruno's Concert Event, Bufalino Boomberino($4000000000, 32000000/s) <- Limited Quantity Craft, Buho de Volto($650000000, 2750000/s) <- Cyber Craft, Bunito Bunito Spinito($900000000, 3000000/s) <- New Year's Event, Bunny Bunny Bunny Sahur($575000000, 2250000/s) <- Easter Event, Bunny and Eggy($135000000000, 170000000/s) <- Divine Fuse, Bunnyman($500000000, 1500000/s) <- Advent Calendar, Buntteo($225000000, 850000/s) <- Easter Event, Burguro And Fryuro($75000000000, 150000000/s), Burrito Bandito($850000000, 4000000/s), Camera Ramena($2300000000, 17000000/s) <- Cyber Craft, Cangurato Gelato($23500000000, 77500000/s) <- The Red Carpet, Capitano Americano($21000000000, 72500000/s) <- Limited Quantity Craft, Capitano Gullini($2700000000, 22000000/s) <- Summer Fuse, Capitano Moby($125000000000, 160000000/s) <- The Red Carpet, Cash or Card($40000000000, 100000000/s) <- The Red Carpet, Caylusaurus($12500000000, 55000000/s) <- Limited Quantity Craft, Celestial Pegasus($150000000000, 175000000/s), Celularcini Viciosini($2750000000, 22500000/s) <- First Craft Machine, Cerberus($150000000000, 175000000/s) <- The Red Carpet, Chachechi($85000000, 400000/s) <- Admin Abuse, Chicleteira Bicicleteira($750000000, 3500000/s) <- The Red Carpet, Chicleteira Champeona($2850000000, 19000000/s) <- Spain Event, Chicleteira Cupideira($2500000000, 17500000/s), Chicleteira Noelteira($2000000000, 15000000/s) <- Santa's Fuse, Chicleteira Surfeiteira($2100000000, 16000000/s) <- Summer Hour, Chicleteirina Bicicleteirina($850000000, 4000000/s) <- The Red Carpet, Chill Puppy($850000000, 4000000/s) <- OG Fuse, Chillin Chili($2500000000, 25000000/s) <- Limited Quantity Craft, Chimnino($1900000000, 14000000/s), Chipso and Queso($2500000000, 25000000/s) <- Limited Quantity Craft, Churrito Bunnito($2600000000, 21000000/s), Cigno Fulgoro($3000000000, 20000000/s) <- Divine Fuse, Cloverat Clapat($15000000000, 60000000/s) <- St Patricks Event, Coco and Mango($4500000000, 33500000/s) <- Summer Fuse, Cooki and Milki($100000000000, 155000000/s) <- Santa's Fuse, Craburger($350000000, 1300000/s), Cuadramat and Pakrahmatmamat($400000000, 1400000/s) <- Brainrot Trader, Cupid Cupid Sahur($715000000, 3100000/s) <- Cupid's Machine, Cupid Hotspot($750000000, 3500000/s), DJ Panda($2500000000, 17500000/s) <- The Red Carpet, Digi Narwhal($200000000000, 200000000/s) <- Cyber Craft, Donkeyturbo Express($1250000000, 7500000/s) <- Christmas Event, Dragon Aquanini($375000000000, 375000000/s) <- Summer Fuse, Dragon Cannelloni($250000000000, 250000000/s) <- The Red Carpet, Dragon Gingerini($350000000000, 350000000/s) <- Santa's Fuse, Dug dug dug($5000000000, 35000000/s) <- First Craft Machine, Duggy Bros($30000000000, 90000000/s) <- Cyber Craft, Dul Dul Dul($150000000, 375000/s) <- Admin Abuse, Easter Easter Easter Sahur($300000000, 1250000/s), Eid Eid Eid Sahur($750000000, 3500000/s) <- Eid Event, Elefanto Frigo($175000000000, 185000000/s) <- First Craft Machine, Esok Goala($4250000000, 32500000/s) <- Soccer Board, Esok Sekolah($3500000000, 30000000/s), Eviledon($3850000000, 31500000/s) <- Witch's Fuse, Examen Bros($20000000000, 70000000/s) <- Los Traders, Extinct Matteo($162500000, 625000/s) <- Extinct Event, Extinct Tralalero($125000000, 450000/s) <- Extinct Event, Festive 67($16000000000, 67000000/s) <- DLC Code, Fishboard($215000000, 825000/s) <- The Red Carpet, Fishino Clownino($48500000000, 120000000/s) <- Fishing Event, Flancito($800000000, 3750000/s) <- SAB's Anniversary Event, Flipa Sandala($1100000000, 6000000/s) <- Backrooms Event, Fortunu and Cashuru($55000000000, 130000000/s), Foxini Lanternini($47500000000, 115000000/s) <- Eid Event, Fragola La La La($4250000000, 32500000/s) <- First Craft Machine, Fragrama and Chocrama($40000000000, 100000000/s) <- Brainrot Trader, Frankentteo($175000000, 700000/s) <- Halloween Event, Frullato Framingo($3000000000, 20000000/s) <- Sammy's Code, Futbolini Skatini($875000000, 4500000/s) <- Cyber Craft, GOAT($237500000, 950000/s) <- Admin Abuse, Garama and Madundung($10000000000, 50000000/s) <- The Red Carpet, Gelato Lumacho($400000000, 1400000/s) <- Summer Hour, Giftini Spyderini($240000000, 999999/s) <- This was obtained from the North Pole, Ginger Gerat($22500000000, 75000000/s) <- Santa's Market, Girafini Raftini($2600000000, 18000000/s), Glaciator($580000000, 2300000/s) <- Backrooms Event, Globa Steppa($3000000000, 27500000/s) <- DLC Code, Gobblino Uniciclino($2850000000, 27500000/s) <- Thanksgiving Event, Gold Egg($0, 0/s), Gold Elf($0, 0/s), Gold Gold Gold($8000000000, 45000000/s), Grabatron($15000000000, 62500000/s) <- DLC Codes, Graipuss Medussi($250000000, 1000000/s) <- The Red Carpet, Granny($0, 0/s), Granny($850000000, 4000000/s) <- Granny's Funeral Event, Griffin($400000000000, 400000000/s) <- Divine Fuse, Guerriro Digitale($120000000, 550000/s), Guest 666($15666666666, 66666666/s) <- Cave Ritual, Gym Bros($7500000000, 42500000/s) <- Cyber Craft, Hippo Golazo($300000000, 1250000/s) <- Soccer Board, Ho Ho Ho Sahur($725000000, 3250000/s) <- Santa's Fuse, Hopilikalika Hopilikalako($12500000000, 55000000/s), Horegini Boom($650000000, 2750000/s) <- Aura Boat, Hydra Bunny($175000000000, 185000000/s), Hydra Dragon Cannelloni($300000000000, 300000000/s) <- OG Fuse, Jackorilla($80000000, 315000/s), Jelly Moby($150000000000, 175000000/s) <- SAB's Anniversary Event, Job Job Job Sahur($175000000, 700000/s) <- The Red Carpet, John Doe($1250000000, 7500000/s) <- Cave Ritual, Jolly Jolly Sahur($8000000000, 45000000/s) <- Santa's Market, Kalika Bros($47500000000, 115000000/s) <- Cyber Craft, Karker Sahur($185000000, 725000/s) <- First Craft Machine, Karkerkar Kurkur($80000000, 325000/s) <- Admin Abuse, Ketchuru and Musturu($7500000000, 42500000/s) <- The Red Carpet, Ketupat Bros($65000000000, 145000000/s) <- OG Fuse, Ketupat Kepat($5000000000, 35000000/s) <- The Red Carpet, Kraken($200000000000, 200000000/s), La Anniversary Grande($10000000000, 50000000/s) <- Limited Quantity Craft, La Casa Boo($40000000000, 100000000/s), La Cucaracha($110000000, 475000/s) <- Admin Abuse, La Easter Grande($12500000000, 55000000/s) <- Limited Quantity Craft, La Extinct Grande($3250000000, 23500000/s) <- Extinct Event, La Food Combinasion($30000000000, 90000000/s), La Ginger Sekolah($23000000000, 75000000/s), La Grande Combinasion($1000000000, 10000000/s) <- The Red Carpet, La Jolly Grande($3500000000, 30000000/s) <- Christmas Wheel Spin, La Karkerkar Combinasion($160000000, 600000/s) <- First Craft Machine, La Lucky Grande($7000000000, 40000000/s) <- Limited Quantity Craft, La Romantic Grande($7000000000, 40000000/s) <- Limited Quantity Craft, La Sahur Combinasion($550000000, 2000000/s) <- First Craft Machine, La Secret Combinasion($50000000000, 125000000/s), La Spooky Grande($2900000000, 24500000/s) <- Limited Quantity Craft, La Summer Grande($15000000000, 60000000/s) <- Limited Quantity Craft, La Supreme Combinasion($200000000000, 200000000/s) <- First Fuse Machine, La Taco Combinasion($5000000000, 35000000/s) <- Limited Quantity Craft, La Vacca Jacko Linterino($225000000, 850000/s) <- Halloween Event, La Vacca Lepre Lepreino($255000000, 1100000/s), La Vacca Prese Presente($160000000, 600000/s) <- Santa's Fuse, La Vacca Saturno Saturnita($80000000, 325000/s) <- The Red Carpet, Las Sis($2500000000, 17500000/s) <- First Craft Machine, Las Tralaleritas($150000000, 650000/s) <- The Red Carpet, Las Vaquitas Saturnitas($200000000, 750000/s) <- La Vacca Ritual, Lavadorito Spinito($8000000000, 45000000/s) <- The Red Carpet, List List List Sahur($550000000, 2000000/s) <- Christmas Event, Los 25($1500000000, 10000000/s), Los 67($2750000000, 22500000/s), Los Admins($35000000000, 95000000/s) <- Los Traders, Los Amigos($55000000000, 130000000/s), Los Bros($2600000000, 24000000/s) <- First Craft Machine, Los Bunitos($865000000, 4250000/s), Los Burritos($1400000000, 8500000/s), Los Candies($3000000000, 23000000/s) <- Santa's Fuse, Los Chicleteiras($1200000000, 7000000/s) <- Chicleteira Ritual, Los Chillis($22500000000, 75000000/s) <- Cyber Craft, Los Combinasionas($2000000000, 15000000/s) <- First Fuse Machine, Los Cornis($715000000, 3100000/s) <- Los Traders, Los Cucarachas($300000000, 1250000/s), Los Cupids($3500000000, 30000000/s) <- Divine Fuse, Los Fruits($3000000000, 23000000/s) <- Summer Fuse, Los Hackers($22500000000, 75000000/s) <- Cyber Craft, Los Hotspotsitos($3000000000, 20000000/s) <- First Fuse Machine, Los Jobcitos($500000000, 1500000/s), Los Jolly Combinasionas($3000000000, 20000000/s) <- Santa's Market, Los Karkeritos($200000000, 750000/s) <- Karker Ritual, Los Mariachis($3000000000, 30000000/s) <- The Piñata, Los Matteos($80000000, 325000/s) <- Matteo Ritual, Los Mi Gatitos($1250000000, 6500000/s) <- Mi Gatito Ritual, Los Mobilis($2700000000, 22000000/s) <- Witch's Fuse, Los Nooo My Hotspotsitos($1000000000, 5500000/s), Los Planitos($2750000000, 18500000/s) <- Brainrot Trader, Los Primos($3750000000, 31000000/s) <- First Craft Machine, Los Puggies($3000000000, 30000000/s) <- Brainrot Trader, Los Quesadillas($875000000, 4500000/s), Los Secret Combinasionas($75000000000, 150000000/s) <- Los Traders, Los Sekolahs($45000000000, 110000000/s), Los Sigmas($580000000, 2300000/s) <- Los Traders, Los Spaghettis($20000000000, 70000000/s) <- Brainrot Trader, Los Spooky Combinasionas($3000000000, 20000000/s), Los Spyderinis($125000000, 425000/s) <- Spyderini Ritual, Los Sweethearts($2250000000, 16500000/s) <- First Fuse Machine, Los Tacoritas($4000000000, 32000000/s) <- First Craft Machine, Los Tangcitos($7500000000, 42500000/s) <- Los Traders, Los Tictacs($15000000000, 60000000/s) <- Los Traders, Los Tortus($100000000, 500000/s), Los Tralaleritos($100000000, 500000/s) <- The Red Carpet, Los Trios($175000000, 700000/s) <- OG Fuse, Love Love Bear($225000000000, 225000000/s) <- Cupid's Machine, Love Love Love Sahur($250000000, 1000000/s), Lovin Rose($4250000000, 32500000/s) <- Cupid's Machine, Luck Luck Luck Sahur($800000000, 3750000/s), Lucky Block($750000000, 0/s), Mariachi Corazoni($1750000000, 12500000/s) <- The Piñata, Mi Gatito($725000000, 3250000/s) <- Admin Abuse, Mieteteira Bicicleteira($2750000000, 26000000/s) <- Witch's Fuse, Moby Bros($225000000000, 225000000/s) <- Los Traders, Money Money Bros($9000000000, 47000000/s) <- Cyber Craft, Money Money Puggy($2600000000, 21000000/s) <- The Red Carpet, Money Money Reindeer($2500000000, 25000000/s) <- Santa's Market, Nacho Spyder($10000000000, 50000000/s) <- Limited Quantity Craft, Naughty Naughty($700000000, 3000000/s) <- Christmas Event, Noo my Candy($900000000, 5000000/s) <- Trick Or Treat, Noo my Eggs($1200000000, 7000000/s) <- Easter Event, Noo my Examen($4250000000, 32500000/s) <- Dul Dul Ritual, Noo my Gold($1850000000, 13500000/s), Noo my Heart($1800000000, 13000000/s), Noo my Present($1100000000, 6000000/s) <- Christmas Event, Noo my Resume($4250000000, 32500000/s) <- Job Ritual, Noodle Noodle Poodle($3000000000, 27500000/s) <- The Red Carpet, Nooo My Hotspot($500000000, 1500000/s) <- Taco Event, Nuclearo Dinossauro($2500000000, 15000000/s) <- The Red Carpet, Octoball($725000000, 3250000/s), Ombrello Topolino($1250000000, 6500000/s) <- Summer Fuse, Orcaledon($7000000000, 40000000/s) <- Brainrot Trader, Pancake and Syrup($50000000000, 125000000/s) <- DLC Code, Paradiso Axolottino($235000000, 900000/s) <- Divine Fuse, Perrito Burrito($250000000, 1000000/s) <- Limited Quantity Craft, Pirulitoita Bicicleteira($600000000, 2500000/s) <- Brainrot Trader, Pizza and Ranch($55000000000, 130000000/s), Please my Present($350000000, 1300000/s) <- Advent Calendar, Popcuru and Fizzuru($135000000000, 170000000/s) <- OG Fuse, Pot Hotspot($600000000, 2500000/s), Pot Pumpkin($700000000, 3000000/s) <- Halloween Event, Pumpkini Spyderini($165000000, 650000/s), Quackini Snackini($15500000000, 65000000/s) <- Egg Town Event, Quesadilla Crocodila($700000000, 3000000/s), Quesadillo Vampiro($750000000, 3500000/s) <- Limited Quantity Craft, Rang Ring Bus($1100000000, 6000000/s) <- Pole Game, Ref Ref Ref Sahur($650000000, 2750000/s) <- Soccer Board, Reindeer Tralala($160000000, 600000/s) <- Christmas Event, Reinito Sleighito($60000000000, 140000000/s), Rico Dinero($7500000000, 42500000/s) <- DLC Code, Rocco Disco($150000000, 650000/s) <- New Year's Event, Rocketini Frostini($700000000, 3000000/s) <- Sammy's Code, Rosetti Tualetti($10000000000, 50000000/s), Rosey and Teddy($130000000000, 165000000/s), Rubiko and Kubiko($21000000000, 72500000/s) <- Los Traders, Rubrikiko($20000000000, 70000000/s) <- Backrooms Event, Sammyni Cakini($12500000000, 85000000/s) <- SAB's Anniversary Event, Sammyni Fattini($20000000000, 70000000/s), Sammyni Spyderini($75000000, 325000/s) <- Admin Abuse, Sand Sand Sand($3000000000, 30000000/s), Santa Hotspot($625000000, 2600000/s), Santteo($210000000, 800000/s) <- Christmas Event, Serafinna Medusella($1000000000, 5500000/s) <- Divine Fuse, Signore Carapace($275000000000, 275000000/s) <- First Craft Machine, Snailo Clovero($2750000000, 18500000/s), Spaghetti Tualetti($15000000000, 60000000/s), Spinny Hammy($2300000000, 17000000/s) <- OG Fuse, Spooky and Pumpky($25000000000, 80000000/s) <- Witch's Fuse, Steakini Fattini($12500000000, 55000000/s) <- Limited Quantity Craft, Strawberrita($1250000000, 6500000/s), Sushi Inu($1300000000, 8000000/s), Swag Soda($1800000000, 13000000/s) <- Brainrot Trader, Swaggy Bros($7000000000, 40000000/s) <- Limited Quantity Craft, Tacorillo Crocodillo($1500000000, 12500000/s) <- Limited Quantity Craft, Tacorita Bicicleta($2250000000, 16500000/s) <- Taco Event, Tang Tang Keletang($4500000000, 33500000/s) <- The Red Carpet, Telemorte($550000000, 2000000/s), Tictac Sahur($6000000000, 37500000/s) <- The Red Carpet, Tirilikalika Tirilikalako($7500000000, 42500000/s) <- First Craft Machine, To to to Sahur($575000000, 2250000/s) <- The Red Carpet, Toro Españolo($575000000, 2250000/s) <- Spain Event, Torrtuginni Dragonfrutini($125000000, 350000/s), Tralaledon($3000000000, 27500000/s) <- First Craft Machine, Trenostruzzo Turbo 4000($90000000, 335000/s) <- First Craft Machine, Trickolino($235000000, 900000/s), Triplito Tralaleritos($230000000, 875000/s), Tuff Toucan($2750000000, 26000000/s) <- New Year's Event, Var Var Var($1000000000, 5500000/s) <- Soccer Board, Ventoliero Pavonero($15500000000, 65000000/s) <- The Red Carpet, Venuspino($150000000000, 175000000/s) <- Summer Fuse, Vulturino Skeletono($110000000, 500000/s) <- Witch's Fuse, W or L($3000000000, 30000000/s) <- Limited Quantity Craft, Yess my Examen($130000000, 575000/s) <- Dul Dul Ritual, Yess my Resume($560000000, 2100000/s) <- Job Ritual, Zombie Tralala($100000000, 500000/s) <- Halloween Event
+  [Spooky] Spooky Lucky Block
+  [St Patrick's] Leprechaun Lucky Block, Premium Leprechaun Lucky Block
+  [Summer] Octo Lucky Block, Premium Octo Lucky Block
+  [Taco] Los Taco Blocks, Lucky Block
+  [Valentines] Heart Lucky Block, Premium Heart Lucky Block
+HIGHEST-INCOME BRAINROTS RIGHT NOW, best first. The FIRST name here is the BEST / most valuable brainrot in the game: Spyder Elephant(1B/s, costs 1T), Strawberry Elephant(750M/s, costs 750B), Headless Horseman(600M/s, costs 600B), Meowl(600M/s, costs 650B), John Pork(500M/s, costs 500B), Skibidi Toilet(450M/s, costs 450B), Griffin(400M/s, costs 400B), Dragon Aquanini(375M/s, costs 375B), Dragon Gingerini(350M/s, costs 350B), Hydra Dragon Cannelloni(300M/s, costs 300B), Signore Carapace(275M/s, costs 275B), Dragon Cannelloni(250M/s, costs 250B), Moby Bros(225M/s, costs 225B), Love Love Bear(225M/s, costs 225B), Arcadragon(215M/s, costs 215B), Digi Narwhal(200M/s, costs 200B), La Supreme Combinasion(200M/s, costs 200B), Kraken(200M/s, costs 200B), Hydra Bunny(185M/s, costs 175B), Elefanto Frigo(185M/s, costs 175B), Celestial Pegasus(175M/s, costs 150B), Venuspino(175M/s, costs 150B), Jelly Moby(175M/s, costs 150B), Cerberus(175M/s, costs 150B), Popcuru and Fizzuru(170M/s, costs 135B)
+MOST EXPENSIVE BRAINROT: Spyder Elephant ($1000000000000). HIGHEST INCOME BRAINROT: Spyder Elephant (1000000000/s).
+ALL EVENT MODULES PRESENT IN THE GAME FILES (includes removed ones): 1x1x1x1, 3 Roads, 4th of July, Ay Mi Gatito, Backrooms, Bloodmoon, Bombardiro Crocodilo, Brazil, Bubblegum, Candy, Caylus Base, Caylus Snap, Chicleteira Bicicleteira, Concert, Crab Rave, Crystal, Cursed, Cyber, Divine, Dul Dul Dul, Easter, Egg City, Egg Lucky Block, Eggrot Hunt, Eid, Extinct, FatSammy, Fishing, Galaxy, Gingerbread Town, Glitch, Graveyard, Indonesia, Job Job Job Sahur, John Pork, Karkerkar Kurkur, La Vacca Saturno Saturnita, Laser City, Los Matteos, Lucky Base, Matteo, Meowl, Mexico, Molten, Mygame43, North Pole, Nyan Cats, Phantom, Radioactive, Rain, Rainbow, Raining Burgers, Raining Tacos, Rap Concert, Rip My Granny, Rusty Snap, Rusty's Base, Sammy Snap, Sammy's Base, Sammyni Spyderini, Skibidi, Snow, Soccer, Solar Flare, Spain, Speed, St Patricks, Starfall, Steak Snap, Steak's Base, Strawberry, Summer, Summer Base, Summer Hour, Taco Base, Trick or Treat, UFO, Valentines, Water, Winter Hour, Witching Hour, YinYang
+EVENT CATEGORIES (a flat file list cannot tell these apart - use this):
+  SEASONAL EVENTS, one per added mutation, in release order:
+    Bloodmoon (Bloodrot), Rainbow Machine (Rainbow), Candy Aurora (Candy),
+    Molten (Lava), Galaxy (23 Aug 2025), Yin-Yang (27 Sep 2025),
+    Radioactive (15 Nov 2025), Cursed (3 Jan 2026), Divine (21 Feb 2026),
+    Cyber Event (18 Apr 2026), Phantom Event (13 Jun 2026)
+  OG EVENTS (only 4, each started by an OG brainrot): Strawberry, Meowl, Skibidi, John Pork
+  NATURAL EVENTS: Starfall, Snowy, Rain, Glitch, 1x1x1x1
+  LUCK EVENTS: 2x, 4x, 6x, 8x, 10x, 12x, 15x, 20x, 25x, 30x Luck
+  LIMITED TIME EVENTS: Trick or Treating, Winter Hour, North Pole, Graveyard,
+    Witching Hour, Extinct, Fishing, Gingerbread Town, 2026, Lance, Valentines,
+    Easter, Egg City, Eggrot Hunt
+  ADMIN ABUSE EXCLUSIVE EVENTS: 3 Lanes, Raining Tacos, UFO, Crab Rave,
+    New Sammy's Base, Old Sammy's Base, Tung Tung Attack, Solar Flare, 4th of July,
+    Nyan Cat, Mygame43, Rap Concert, Bubblegum, Brazil, Indonesian, Mexico,
+    Fat Sammy, Sammy Snap, Pinata, Panjat Pinang, Aura Farm Boat
+  ADMIN MACHINE EVENTS: Nyan Cat, Bubblegum, Crab Rave, Brazil, Fire
+  REMOVED EVENTS (no longer in the game - never answer with these unless the
+    riddle explicitly asks about something removed or old): 10B, Sleepy,
+    Fuse Machine Luck, Witch Fuse Luck, Santa's Fuse Luck, Santa's Fuse Skip,
+    Galaxy Introduction, Matteo
+
+APPLY THE SAME RULE AS MUTATIONS: "the first event", "the first X I added" means the
+EARLIEST RELEASED one, not the first alphabetically and not the first in a file list.
+The first seasonal event is Bloodmoon; the newest seasonal event is the Crystal Event.
+UPDATE HISTORY - weekly updates, every Saturday. Use this for ANY "first / newest /
+when did I add" question. Update N is the Nth update, so "the first X" = the X in
+the lowest-numbered update here.
+  U1  31 May 2025 - Gold + Diamond mutations, Rebirths 6-7, SECRET rarity added
+  U2  7 Jun 2025 - Bloodmoon Event, BLOODROT mutation (the FIRST mutation Sammy added)
+  U3  14 Jun 2025 - Rebirth 9
+  U4  21 Jun 2025 - Rainbow Machine, Rainbow mutation
+  U5  28 Jun 2025 - TRAITS ADDED (traits did not exist before this)
+  U6  5 Jul 2025 - Candy Aurora Event, Candy mutation
+  U7  12 Jul 2025 - LUCKY BLOCKS added, Rebirth 12
+  U8  18 Jul 2025 - Bubblegum trait (the FIRST individually-added trait)
+  U9  25 Jul 2025 - Molten Event, Rebirth 13
+  U10 1 Aug 2025 - FUSE MACHINE added
+  U11 8 Aug 2025 - Rebirth 14
+  U12 15 Aug 2025 - Brazil Event
+  U13 23 Aug 2025 - Galaxy Event
+  U14 30 Aug 2025 - OG RARITY added + Strawberry Elephant (the FIRST OG brainrot)
+  U15 6 Sep 2025 - Rebirth 15, Craft Machine
+  U16 13 Sep 2025 - Extinct
+  U17 20 Sep 2025 - Mexico Event
+  U18 27 Sep 2025 - Yin-Yang Event
+  U19 4 Oct 2025 - Los Lucky Blocks, Rebirth 16
+  U20 11 Oct 2025 - Witch Fuse, Witching Hour
+  U21 18 Oct 2025 - MEOWL (2nd OG), Indonesian Event
+  U22 25 Oct 2025 - Halloween
+  U23 1 Nov 2025 - 1x1x1x1 ritual
+  U24 8 Nov 2025 - Brainrot Dealer
+  U25 15 Nov 2025 - Radioactive, Brainrot Trader, Fishing
+  U26 22 Nov 2025 - Rebirth 17
+  U27 29 Nov 2025 - Tung Tung Tung Sahur returns
+  U28 6 Dec 2025 - Winter Hour, Santa's Fuse
+  U29 13 Dec 2025 - North Pole Event, Festive Lucky Block (CODES FEATURE ADDED THIS WEEK)
+  U30 20 Dec 2025 - New Index
+  U31 27 Dec 2025 - SKIBIDI TOILET (3rd OG)
+  U32 3 Jan 2026 - Cursed mutation
+  U33 10 Jan 2026 - Duels Machine
+  U34 17 Jan 2026 - Concert
+  U35 24 Jan 2026 - Fuse + LTM + Rebirth
+  U36 31 Jan 2026 - New Ritual + Brainrots
+  U37 7 Feb 2026 - Cupid's Machine, Heart Lucky Block
+  U38 14 Feb 2026 - Admin Machine
+  U39 21 Feb 2026 - Trade Machine, DIVINE mutation
+  U40 28 Feb 2026 - Divine Admin Machine, Headless Horseman base skin
+  U41 7 Mar 2026 - Divine Fuse
+  U42 14 Mar 2026 - Lucky Pot
+  U43 21 Mar 2026 - Granny's Funeral, Eid Celebration
+  U44 28 Mar 2026 - Easter Hour
+  U45 4 Apr 2026 - Egg Lucky Block, Egg Hunt, Egg City
+  U46 11 Apr 2026 - Berryno, Appelini, Strawberrita, Cash or Card, Bananito
+  U47 18 Apr 2026 - CYBER mutation, Cyber Craft Machine
+  U48 25 Apr 2026 - Guest 666 buffed, Cyber Admin Machine
+  U49 2 May 2026 - JOHN PORK (4th and newest OG brainrot)
+  U50 9 May 2026 - Backrooms Event
+  U51 16 May 2026 - 1 Year anniversary, 30x Luck
+  U52 23 May 2026 - Summer Fuse
+  U52.5 30 May 2026 - Steakini Fattini (limited)
+  U52.75 6 Jun 2026 - Caylusaurus (limited)
+  U53 13 Jun 2026 - PHANTOM mutation, Summer Lucky Block, Trade Machine removed
+  U55 27 Jun 2026 - Live Match Events
+  U57 11 Jul 2026 - Los Traders, 6 new brainrots
+  U58 18 Jul 2026 - 2 Red Carpet brainrots, 1 Los Traders brainrot
+  U59 25 Jul 2026 - CURRENT UPDATE. Summer Fuse removed. CRYSTAL mutation (x13),
+      Crystal Event, Crystal Slap/Hammer/Base. New Secrets: Toro Espanolo,
+      Pizza and Ranch, Examen Bros, Los Secret Combinasionas, Chicleteira Champeona.
+      Spain Event, new Bull trait, Taco trait reworked (first trait ever reworked).
+  U60 1 Aug 2026 - not released yet, this is the NEXT update.
+
+OG BRAINROTS IN RELEASE ORDER (only 4 exist):
+  1. Strawberry Elephant (30 Aug 2025) 2. Meowl (18 Oct 2025)
+  3. Skibidi Toilet (27 Dec 2025)      4. John Pork (2 May 2026, newest)
+UPDATE SCHEDULE (oldest -> newest): Update-07/18/2026, Update-07/25/2026, Update-08/01/2026, Update-08/08/2026
+LUCKYBLOCKS: Admin Lucky Block, Brainrot God Lucky Block, Egg Lucky Block, Festive Lucky Block, Heart Lucky Block, Leprechaun Lucky Block, Los Lucky Blocks, Los Taco Blocks, Mythic Lucky Block, Octo Lucky Block, Premium Egg Lucky Block, Premium Festive Lucky Block, Premium Heart Lucky Block, Premium Leprechaun Lucky Block, Premium Octo Lucky Block, Secret Lucky Block, Spooky Lucky Block, Taco Lucky Block
+SHOP: 1227013099, 1228591447, 1229510262, 3290152459, 3290152513, 3290152552, 3290152611, 3290160693, 3290160783, 3290160857, 3290160954, 3290161030, 3290334159, 3296367604, 3296367737, 3296367825, 3296448740, 3296448922, 3301638537, 3307371795, 3307372046, 3307372342, 3307372798, 3312023518, 3312023590, 3312023715, 3312891057, 3312944807, 3312944986, 3312945232, 3312945488, 3322567440, 3322567771, 3322567871, 3322568083, 3329527999, 3329528158, 3329528437, 3337520317, 3345489151, 3345489415, 3345489701, 3345489943, 3354160217, 3377020181, 3377020567, 3377020761, 3377021022, 3394964472, 3394964604, 3394964736, 3394965881, 3394969112, 3414123796, 3414123985, 3414124199, 3414124509, 3437062543, 3437979356, 3437989614, 3442292161, 3442807551, 3450973929, 3450973930, 3450973932, 3450973933, 3450973934, 3450973935, 3450973936, 3450973937, 3456071065, 3456071066, 3456071067, 3456071068, 3467217689, 3467217690, 3467217691, 3467217692, 3467217693, 3467217694, 3467217695, 3477983793, 3478819641, 3478819642, 3478819648, 3481756179, 3483709817, 3483721069, 3483736285, 3483927303, 3487835433, 3487835435, 3487835436, 3487835440, 3488386426, 3488386428, 3488386429, 3488386430, 3499648585, 3499648586, 3499648587, 3499648590, 3520574597, 3520721003, 3520721004, 3520721005, 3531055923, 3531055926, 3531057541, 3531057803, 3531057804, 3532165598, 3536298171, 3536298173, 3536490026, 3536490028, 3536490029, 3536490030, 3536490032, 3536490033, 3536490034, 3536490035, 3536490048, 3536490050, 3536490051, 3536490052, 3536944215, 3536944219, 3536944220, 3541032360, 3541032361, 3541032362, 3541032363, 3555794270, 3555794271, 3555794274, 3555794276, 3555794280, 3568906008, 3569489649, 3569489650, 3569489651, 3569489655, 3569489656, 3576344385, 3576344387, 3576344388, 3576344389, 3596422616, 3603521263, 3603521264, 3603521272, 3603521280, 3603521290, 3603521291, 3603521320, 3604076040, 3604076042, 3604076044, 3604076046, 3609216525, 3609216532, 3609216534, 3609216536, 3611250645, 3611250647, 3611250649, 3611250653
+SHOPITEMS: All Seeing Sentry (price 5000000), Attack Doge (price 1000000000), Bee Launcher (price 10000), BeeHive (price 300000000), Body Swap Potion (price 50000000), Boogie Bomb (price 500000), Coil Combo (price 20000), Dark Matter Slap (price 1500000), Diamond Slap (price 50000), Emerald Slap (price 200000), Flame Slap (price 2500000), Flash Teleport (price 3000000000), Galaxy Slap (price 15000000), Giant Potion (price 1500000000), Glitched Slap (price 25000000), Gold Slap (price 15000), Grapple Hook (price 75000), Gravity Coil (price 3000), Gummy Bear (price 400000000), Heart Balloon (price 150000000), Heatseeker (price 700000000), Invisibility Cloak (price 300000), Iron Slap (price 2500), Laser Cape (price 20000000), Magnet (price 200000000), Medusa's Head (price 5000000), Megaphone (price 250000000), Nuclear Slap (price 6000000), Paintball Gun (price 100000000), Quantum Cloner (price 3000000), Rage Table (price 25000), Rainbowrath Sword (price 10000000), Ruby Slap (price 1000000), Slap (price 500), Speed Coil (price 750), Splatter Slap (price 75000000), Subspace Mine (price 500000000), Taser Gun (price 100000), Trap (price 1000), Web Slinger (price 2000000)
+RODSSHOPITEMS: Fiery Rod (price 75000000), Frozen Rod (price 2500000), Radioactive Rod (price 1000000000), Starter Rod (price 0)
+ITEMS: Alien Slap, Ban Hammer, Bat, Blackhole Slap, Bloodmoon Hammer, Bloodmoon Slap, Candy Cane, Candy Slap, Crystal Hammer, Crystal Slap, Cursed Slap, Cyber Slap, Dark Matter Slap, Delete Hammer, Dev Slap, Diamond Slap, Divine Slap, Emerald Slap, Flame Slap, Galaxy Slap, Glitched Slap, Gold Slap, Gummy Bear, Huge Tree, Iron Slap, Lava Slap, Lollipop, Medium Tree, Nuclear Slap, Overseer Mace, Phantom Slap, Radioactive Slap, Rainbow Hammer, Rainbow Huge Tree, Rainbow Medium Tree, Rainbow Slap, Rainbow Small Tree, Ruby Slap, Slap, Small Tree, Splatter Slap, Steampunk Glove, Yin Yang Slap
+BASES: 0, 1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 2, 3, 4, 5, 6, 7, 8, 9
+EGGROTZONENAMES: Candy, Divine, Galaxy, Lava, Normal (Rainbow)
+EXTINCTMACHINE: Inputs, Output (La Extinct Grande)
+FUSEMACHINEDATA: FFlagDefaults, FuseLuckProductId (3483927303), FuseSlots (4), FuseTime, LuckMultipliers, Remotes, RevealNowProductId (3354160217)
+CRYSTALSPINWHEEL: AltRewards, Rewards
+PHANTOMSPINWHEEL: AltRewards, Rewards
+MERCHANTDATA: Brainrots
+CANDYMERCHANTDATA: Cake Trap (price 500000), Candy Bomb (price 25000000), Candy Coils (price 250000000), Candy Launcher (price 1000000000), Confetti Cannon (price 50000000), Gummy Bear (price 15000000), Jelly Gun (price 100000000), Lollipop (price 5000000), Sweet Scythe (price 500000000)
+SANTAMERCHANTDATA: Brainrots
+MERCHSHOPDATA: CodeLength (12), CurrentItem (Boppin Bunny), CurrentShopItem (Boppin Bunny), DlcTypeToItem, IsEnabled, Items, TestProductInfo
+JUMPSHOPDATA: 1 (price 25), 2 (price 50), 3 (price 100), 4 (price 250), 5 (price 500), 6 (price 750)
+VALENTINESSHOP: Products
+HALLOWEENDATA: MaxCurrency (500)
+DUELSMODES: All Gears, Bat + Medusa, Bat Only
+UNLOCKBASE: 1, 2, 3
+LUCKICONS: 10x (rbxassetid://137888841783656), 12x (rbxassetid://111270514767194), 15x (rbxassetid://97625587462302), 20x (rbxassetid://108262462562762), 25x (rbxassetid://126777297538048), 2x (rbxassetid://92074411396710), 30x (rbxassetid://135619545252685), 35x (rbxassetid://104250870097834), 4x (rbxassetid://90033075589118), 6x (rbxassetid://94933198053674), 8x (rbxassetid://124799036749678)
+REBIRTH TIERS (18 total): R1 needs $1000000, R2 needs $3000000, R3 needs $12500000, R4 needs $35000000, R5 needs $100000000, R6 needs $350000000, R7 needs $1000000000, R8 needs $5000000000, R9 needs $25000000000, R10 needs $250000000000, R11 needs $1000000000000, R12 needs $7000000000000, R13 needs $35000000000000, R14 needs $100000000000000, R15 needs $500000000000000, R16 needs $1000000000000000, R17 needs $2000000000000000, R18 needs $10000000000000000
+MACHINE RECIPE - the EXTINCT MACHINE combines Extinct Ballerina + Extinct Matteo + Extinct Tralalero to produce La Extinct Grande. It runs during the Extinct Event, so that brainrot is both "from the Extinct Event" and "from the Extinct Machine" - either phrasing answers EXTINCT.
+LIVE SOCCER EVENT TEAMS (49, numbered - "team number N" means this list): 1=Algeria, 2=Argentina, 3=Australia, 4=Austria, 5=Belgium, 6=Brazil, 7=Canada, 8=Bosnia and Herzegovina, 9=Cape Verde, 10=Colombia, 11=Croatia, 12=Curacao, 13=Czechia, 14=DR Congo, 15=Ecuador, 16=Egypt, 17=England, 18=France, 19=Germany, 20=Ghana, 21=Haiti, 22=Indonesia, 23=Iran, 24=Iraq, 25=Ivory Coast, 26=Japan, 27=Jordan, 28=Mexico, 29=Morocco, 30=Netherlands, 31=New Zealand, 32=Norway, 33=Panama, 34=Paraguay, 35=Portugal, 36=Qatar, 37=Saudi Arabia, 38=Scotland, 39=Senegal, 40=South Africa, 41=South Korea, 42=Spain, 43=Sweden, 44=Switzerland, 45=Tunisia, 46=Turkey, 47=United States, 48=Uruguay, 49=Uzbekistan
+EVENT BASE SKINS: Easter, Lucky, Summer, Taco, Valentines
+PAID BASE SKINS: Bunny Basket, Gingerbread, Octo, Pot of Gold, Rose

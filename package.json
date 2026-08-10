@@ -1,0 +1,16 @@
+{
+  "name": "zyro-riddle-server",
+  "version": "1.0.0",
+  "description": "OpenAI-compatible riddle-solver proxy for the Zyro HUD (Steal a Brainrot)",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
