@@ -16,6 +16,7 @@ app.use(express.json({ limit: "1mb" }));
 // UPSTREAM_BASE_URL  (optional)  default Groq. OpenRouter: https://openrouter.ai/api
 // MODEL              (optional)  default llama-3.3-70b-versatile (Groq)
 const UPSTREAM_BASE = (process.env.UPSTREAM_BASE_URL || "https://api.groq.com/openai").replace(/\/+$/, "");
+const UPSTREAM_CHAT_PATH = process.env.UPSTREAM_CHAT_PATH || "/v1/chat/completions"; // Gemini uses "/chat/completions"
 const UPSTREAM_KEY  = process.env.LLM_API_KEY || "";
 const MODEL         = process.env.MODEL || "llama-3.3-70b-versatile";
 
@@ -33,6 +34,32 @@ let SYSTEM_PROMPT = fs.readFileSync(path.join(__dirname, "prompt.txt"), "utf8")
   .replace(/^\s*"GAME:/m, "GAME:")           // strip leading quote on game data
   .replace("=== LIVE STATE ===", "=== LIVE STATE ===\n" + LIVE_STATE)
   .trim();
+
+// ------------------------------------------------------------------
+// Shrink for free-tier token limits (Groq free = 12k tokens/min).
+// Drop bulky sections riddles never use, and the per-brainrot price/income
+// numbers — the brainrot NAMES, SOURCES, events and update history stay.
+// ------------------------------------------------------------------
+if (process.env.TRIM_PROMPT !== "0") {
+  const DROP_PREFIXES = [
+    "SHOP:", "SHOPITEMS:", "RODSSHOPITEMS:", "ITEMS:", "BASES:", "LUCKICONS:",
+    "EGGROTZONENAMES:", "EXTINCTMACHINE:", "FUSEMACHINEDATA:", "CRYSTALSPINWHEEL:",
+    "PHANTOMSPINWHEEL:", "MERCHANTDATA:", "CANDYMERCHANTDATA:", "SANTAMERCHANTDATA:",
+    "MERCHSHOPDATA:", "JUMPSHOPDATA:", "VALENTINESSHOP:", "HALLOWEENDATA:",
+    "DUELSMODES:", "UNLOCKBASE:", "REBIRTH TIERS",
+  ];
+  SYSTEM_PROMPT = SYSTEM_PROMPT
+    .split("\n")
+    .filter((line) => {
+      const t = line.trimStart();
+      return !DROP_PREFIXES.some((p) => t.startsWith(p));
+    })
+    .join("\n")
+    // strip per-brainrot "($17500000, 85000/s)" price/income — keep name + source
+    .replace(/\s*\(\$?\d+,\s*\d+\/s\)/g, "")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
 
 console.log(`[zyro] prompt loaded (${SYSTEM_PROMPT.length} chars) | model=${MODEL} | upstream=${UPSTREAM_BASE}`);
 
@@ -63,7 +90,7 @@ app.post("/v1/chat/completions", async (req, res) => {
       return res.status(400).json({ choices: [{ message: { content: "ERROR: no riddle provided" } }] });
     }
 
-    const upstream = await fetch(`${UPSTREAM_BASE}/v1/chat/completions`, {
+    const upstream = await fetch(`${UPSTREAM_BASE}${UPSTREAM_CHAT_PATH}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
