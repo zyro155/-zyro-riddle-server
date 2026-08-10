@@ -61,6 +61,23 @@ if (process.env.TRIM_PROMPT !== "0") {
     .trim();
 }
 
+// ------------------------------------------------------------------
+// Hard output-format reinforcement (small/fast models need this spelled out).
+// Appended LAST so it's the most salient instruction the model sees.
+// ------------------------------------------------------------------
+SYSTEM_PROMPT += "\n\n" + [
+  "=== FINAL OUTPUT RULES — THESE OVERRIDE EVERYTHING ABOVE ===",
+  "A CODE reply is ONE line: 'CODE:' then the final code, nothing else.",
+  "The code is ALL CAPITAL LETTERS with every part joined directly together:",
+  "NO spaces, and NEVER write the joining words 'and' / 'plus' / 'or' / '+' / '&' or any punctuation between the parts.",
+  "Those joining words in the question are ONLY an instruction to concatenate — they are never part of the code.",
+  "Examples (study these):",
+  "  'the color of the sky and grass'  -> sky=BLUE, grass=GREEN  -> CODE: BLUEGREEN   (NOT 'blue and green', NOT BLUEANDGREEN)",
+  "  'my favorite color plus 67'       -> CODE: GREEN67          (NOT 'GREEN plus 67')",
+  "  'red and blue and my name'        -> CODE: REDBLUESAMMY",
+  "Only keep letters that are INSIDE a single copied name, e.g. the brainrot 'Ketchuru and Musturu' -> KETCHURUANDMUSTURU.",
+].join("\n");
+
 console.log(`[zyro] prompt loaded (${SYSTEM_PROMPT.length} chars) | model=${MODEL} | upstream=${UPSTREAM_BASE}`);
 
 // ------------------------------------------------------------------
@@ -112,7 +129,16 @@ app.post("/v1/chat/completions", async (req, res) => {
       (data && data.error && data.error.message) ||
       "";
 
-    const clean = (answer || "").trim();
+    let clean = (answer || "").trim();
+
+    // Backstop: force a plain CODE to uppercase + no spaces (the game's codes look
+    // like that). Leaves ANSWER prose and SEARCH "query | guess" lines untouched.
+    {
+      const firstLine = (clean.split(/\r?\n/).find((l) => l.trim()) || clean).trim();
+      const m = firstLine.match(/^(CODE)\s*:\s*([^|]*)$/i);
+      if (m) clean = "CODE: " + m[2].replace(/\s+/g, "").toUpperCase();
+    }
+
     console.log(`[zyro] "${riddle.slice(0, 60)}" -> "${clean.slice(0, 60)}"`);
 
     // Return OpenAI-shaped so the Zyro client parser reads choices[0].message.content
