@@ -67,6 +67,8 @@ if (process.env.TRIM_PROMPT !== "0") {
 // ------------------------------------------------------------------
 SYSTEM_PROMPT += "\n\n" + [
   "=== FINAL OUTPUT RULES — THESE OVERRIDE EVERYTHING ABOVE ===",
+  "ALWAYS reply in CODE mode: every reply starts with 'CODE:'. Treat EVERY question as a redeem-code",
+  "riddle, even a plain real-world one (colors, capitals, math). NEVER reply 'ANSWER:', never plain prose, never SEARCH.",
   "A CODE reply is ONE line: 'CODE:' then the final code, nothing else.",
   "The code is ALL CAPITAL LETTERS with every part joined directly together:",
   "NO spaces, and NEVER write the joining words 'and' / 'plus' / 'or' / '+' / '&' or any punctuation between the parts.",
@@ -135,8 +137,9 @@ app.post("/v1/chat/completions", async (req, res) => {
     // like that). Leaves ANSWER prose and SEARCH "query | guess" lines untouched.
     {
       const firstLine = (clean.split(/\r?\n/).find((l) => l.trim()) || clean).trim();
-      const m = firstLine.match(/^(CODE)\s*:\s*([^|]*)$/i);
-      if (m) clean = "CODE: " + m[2].replace(/\s+/g, "").toUpperCase();
+      // force CODE mode: a plain CODE or a stray ANSWER both become an uppercase, spaceless code
+      const m = firstLine.match(/^(?:CODE|ANSWER)\s*:\s*([^|]*)$/i);
+      if (m) clean = "CODE: " + m[1].replace(/\s+/g, "").toUpperCase();
     }
 
     console.log(`[zyro] "${riddle.slice(0, 60)}" -> "${clean.slice(0, 60)}"`);
