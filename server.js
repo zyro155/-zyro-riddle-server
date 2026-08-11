@@ -28,8 +28,9 @@ const LIVE_STATE =
 // The developer's personal facts — used for any possessive "my ..." part of a riddle.
 // Editable without a redeploy via the DEV_FACTS env var (put each fact on its own line).
 const DEV_FACTS = process.env.DEV_FACTS || [
-  "The developer is Sammy / SpyderSammy (creator group BRAZILIAN SPYDER).",
-  '"my name" / the dev\'s name = SAMMY',
+  "The game is by SpyderSammy (owner, creator group BRAZILIAN SPYDER); his developer is named HASTED.",
+  '"my name" (the owner referring to himself) = SAMMY',
+  '"the developer" / "my developer" / "the developer\'s name" = HASTED',
   '"my favorite color" / "my favourite colour" = BLUE',
   '"my birthday month" / "when I was born" = FEBRUARY',
   '"my favorite brainrot" = MEOWL',
