@@ -22,8 +22,17 @@ const MODEL         = process.env.MODEL || "llama-3.3-70b-versatile";
 
 // Optional "live" facts the solver uses for "right now / this month / currently".
 const LIVE_STATE =
-  'Current update: UPDATE59 (Crystal Update, 25 July 2026). Newest mutation: CRYSTAL. ' +
-  'Featured events: Crystal Event, Spain Event. Treat "right now / this month / currently / today" using this.';
+  'Current update: UPDATE61 (RNG Machine + Queen Bee update, 8 August 2026). ' +
+  'Newest mutation: CRYSTAL (no new mutation was added this update). ' +
+  'Newest features: the RNG Machine (spend cash to roll random brainrots, with upgradable luck, mutation-luck and spin-speed) ' +
+  'and the Queen Bee event (activates every 2 hours). ' +
+  'Newest Bee traits: Bee (x5), Ice Bee (x6), Fire Bee (x6), Queen Bee. ' +
+  'Newest brainrots (added 8 Aug 2026): Bumbatron, Yetimatic, S\'more Serat, Queen Bee, Scorpino Coasterino, ' +
+  'Honey Honey Bear, Peschito Machito, Cornetto Morsetto, Gelatina Volatina. ' +
+  'These come from the RNG Machine (Yetimatic, Scorpino Coasterino, Peschito Machito, Gelatina Volatina) ' +
+  'and the Queen Bee Merchant (Bumbatron, S\'more Serat, Queen Bee, Honey Honey Bear, Cornetto Morsetto). ' +
+  'Featured events: Queen Bee Event, RNG Machine. The single newest/headline brainrot & trait is the QUEEN BEE. ' +
+  'Treat "right now / this month / currently / today / newest / latest" using this.';
 
 // The developer's personal facts — used for any possessive "my ..." part of a riddle.
 // Editable without a redeploy via the DEV_FACTS env var (put each fact on its own line).
