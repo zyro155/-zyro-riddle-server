@@ -25,11 +25,24 @@ const LIVE_STATE =
   'Current update: UPDATE59 (Crystal Update, 25 July 2026). Newest mutation: CRYSTAL. ' +
   'Featured events: Crystal Event, Spain Event. Treat "right now / this month / currently / today" using this.';
 
+// The developer's personal facts — used for any possessive "my ..." part of a riddle.
+// Editable without a redeploy via the DEV_FACTS env var (put each fact on its own line).
+const DEV_FACTS = process.env.DEV_FACTS || [
+  "The developer is Sammy / SpyderSammy (creator group BRAZILIAN SPYDER).",
+  '"my name" / the dev\'s name = SAMMY',
+  '"my favorite color" / "my favourite colour" = BLUE',
+  '"my birthday month" / "when I was born" = FEBRUARY',
+  '"my favorite brainrot" = MEOWL',
+  '"my favorite mutation" = GALAXY',
+  '"my favorite trait" = STRAWBERRY',
+].join("\n");
+
 // ------------------------------------------------------------------
 // Load + clean the riddle-solver prompt (your traced riddle solver ai.txt)
 // ------------------------------------------------------------------
 let SYSTEM_PROMPT = fs.readFileSync(path.join(__dirname, "prompt.txt"), "utf8")
-  .replace(/%s/g, "")                        // drop Lua format placeholders
+  .replace(/%s/, "=== DEVELOPER (Sammy) — use these for any \"my ...\" fact ===\n" + DEV_FACTS)  // 1st placeholder = dev facts
+  .replace(/%s/g, "")                        // clear the remaining placeholders
   .replace(/^\s*",\s*$/m, "")                // drop the ", source artifact
   .replace(/^\s*"GAME:/m, "GAME:")           // strip leading quote on game data
   .replace("=== LIVE STATE ===", "=== LIVE STATE ===\n" + LIVE_STATE)
