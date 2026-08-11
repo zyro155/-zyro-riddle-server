@@ -33,6 +33,7 @@ const DEV_FACTS = process.env.DEV_FACTS || [
   '"the developer" / "my developer" / "the developer\'s name" = HASTED',
   '"my favorite color" / "my favourite colour" = BLUE',
   '"my birthday month" / "when I was born" = FEBRUARY',
+  '"my age" / "how old am I" = 24',
   '"my favorite brainrot" = MEOWL',
   '"my favorite mutation" = GALAXY',
   '"my favorite trait" = STRAWBERRY',
